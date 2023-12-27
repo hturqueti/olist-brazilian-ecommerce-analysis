@@ -1,4 +1,7 @@
-![Python](https://img.shields.io/badge/python-3.12.1-blue?style=flat&logo=python&logoColor=ffdd54&labelColor=black&color=blue)
+[![Python](https://img.shields.io/badge/python-3.12.1-blue?style=flat&logo=python&logoColor=ffdd54&color=blue)](https://www.python.org/downloads/release/python-3121/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-dataset-blue?logo=kaggle)](https://www.kaggle.com/olistbr/brazilian-ecommerce)
+
+
 
 # Olist Brazilian E-Commerce Analysis
 <p align="center">
