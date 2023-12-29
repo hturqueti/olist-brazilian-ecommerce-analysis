@@ -325,3 +325,9 @@ cython_debug/
 
 # Data files
 data/raw/*.csv
+
+# Model files
+*.safetensors
+
+# Custom ignore
+*.exe
