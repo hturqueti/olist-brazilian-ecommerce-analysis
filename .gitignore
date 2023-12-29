@@ -325,6 +325,7 @@ cython_debug/
 
 # Data files
 data/raw/*.csv
+data/processed/*.parquet
 
 # Model files
 *.safetensors
