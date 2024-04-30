@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "olist-brazilian-ecommerce-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Henrique Marques Turqueti <contato@hmturqueti.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.1"
+plotly = "^5.20.0"
+jupyter = "^1.0.0"
+spacy = "^3.7.4"
+duckdb = "^0.10.1"
+transformers = "^4.39.3"
+tensorflow = "^2.16.1"
+tf-keras = "^2.16.0"
+pyarrow = "^15.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
