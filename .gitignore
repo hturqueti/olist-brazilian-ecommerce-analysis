@@ -332,3 +332,4 @@ data/processed/*.parquet
 
 # Custom ignore
 *.exe
+/data
