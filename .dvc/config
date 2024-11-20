@@ -1,0 +1,5 @@
+[core]
+    remote = gs-dvc-files
+    autostage = true
+['remote "gs-dvc-files"']
+    url = gs://dvc-files/olist-brazilian-ecommerce-analysis

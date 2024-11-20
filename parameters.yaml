@@ -1,0 +1,62 @@
+state_regions:
+    "AC": "North"
+    "AL": "North East"
+    "AP": "North"
+    "AM": "North"
+    "BA": "North East"
+    "CE": "North East"
+    "DF": "Midwest"
+    "ES": "Southeast"
+    "GO": "Midwest"
+    "MA": "North East"
+    "MT": "Midwest"
+    "MS": "Midwest"
+    "MG": "Southeast"
+    "PA": "North"
+    "PB": "North East"
+    "PR": "South"
+    "PE": "North East"
+    "PI": "North East"
+    "RJ": "Southeast"
+    "RN": "North East"
+    "RS": "South"
+    "RO": "North"
+    "RR": "North"
+    "SC": "South"
+    "SP": "Southeast"
+    "SE": "North East"
+    "TO": "North"
+
+colors:
+    by_order_status:
+      "created": "#6e35ff"
+      "processing": "#6e35ff"
+      "approved": "#6e35ff"
+      "invoiced": "#6e35ff"
+      "shipped": "#6e35ff"
+      "delivered": "#00c456"
+      "unavailable": "#ff4d65"
+      "canceled": "#ff4d65"
+    by_comment_sentiment:
+      "Positive": "#49B265"
+      "Neutral": "#ffc31c"
+      "Negative": "#ff2d39"
+      "No comment": "#a9a9a9"
+    by_state_region:
+      'Midwest': "#D8D76F"
+      'North East': "#FF9F9B"
+      'North': "#8DE5A1"
+      'Southeast': "#CFCFCF"
+      'South': "#A1C9F4"
+    by_product_category:
+      'accessories': '#ff0000'
+      'automotive': '#4d4d4d'
+      'beauty': '#f744b5'
+      'children': '#48d9da'
+      'desk': '#502d16'
+      'fashion': '#9a0098'
+      'home': '#ff6200'
+      'leisure': '#1ea828'
+      'others': '#000000'
+      'pet': '#806600'
+      'technology': '#0f22da'
