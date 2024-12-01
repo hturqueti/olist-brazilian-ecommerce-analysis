@@ -1,6 +1,6 @@
 plotly:
   "theme": "plotly_white"
-  "render": "vscode+pdf+svg"
+  "render": "vscode+kaggle+svg"
 
 state_regions:
     "AC": "North"
