@@ -1,3 +1,7 @@
+plotly:
+  "theme": "plotly_white"
+  "render": "svg"
+
 state_regions:
     "AC": "North"
     "AL": "North East"
