@@ -1,0 +1,85 @@
+// https://dbdiagram.io/
+Table olist_customers {
+    customer_id varchar [pk]
+    customer_unique_id varchar [pk]
+    customer_zip_code_prefix varchar
+    customer_city varchar
+    customer_state varchar
+}
+
+Table olist_orders {
+    order_id varchar [pk]
+    customer_id varchar [ref: - olist_customers.customer_id]
+    order_status varchar
+    order_purchase_timestamp timestamp
+    order_approved_at timestamp
+    order_delivered_carrier_date timestamp
+    order_delivered_customer_date timestamp
+    order_estimated_delivery_date timestamp
+}
+
+Table olist_order_items {
+    order_id varchar [pk, ref: > olist_orders.order_id]
+    order_item_id int [pk]
+    product_id varchar [ref: > olist_products.product_id]
+    seller_id varchar [ref: > olist_sellers.seller_id]
+    shipping_limit_date timestamp
+    price float
+    freight_value float
+}
+
+// Tabela de produtos
+Table olist_products {
+    product_id varchar [pk]
+    product_category_name varchar
+    product_name_lenght int
+    product_description_lenght int
+    product_photos_qty int
+    product_weight_g int
+    product_length_cm int
+    product_height_cm int
+    product_width_cm int
+}
+
+// Tabela de produtos
+Table product_category_name_translation {
+    product_category_name varchar [pk, ref: < olist_products.product_category_name]
+    product_category_name_english varchar 
+}
+
+// Tabela de vendedores
+Table olist_sellers {
+    seller_id varchar [pk]
+    seller_zip_code_prefix int
+    seller_city varchar
+    seller_state varchar
+}
+
+// Tabela de geolocalizações
+Table olist_geolocation {
+    geolocation_zip_code_prefix varchar [ref: <> olist_customers.customer_zip_code_prefix, ref: <> olist_sellers.seller_zip_code_prefix]
+    geolocation_lat float
+    geolocation_lng float
+    geolocation_city varchar
+    geolocation_state varchar
+}
+
+// Tabela de pagamentos
+Table olist_order_payments {
+    order_id varchar [pk, ref: > olist_orders.order_id]
+    payment_sequential int [pk]
+    payment_type varchar
+    payment_installments int
+    payment_value float
+}
+
+// Tabela de avaliações
+Table olist_order_reviews {
+    review_id varchar [pk]
+    order_id varchar [ref: > olist_orders.order_id]
+    review_score int
+    review_comment_title varchar
+    review_comment_message varchar
+    review_creation_date timestamp
+    review_answer_timestamp timestamp
+}

@@ -23,4 +23,4 @@ The analysis was made using **Python 3.12.2** and the following libraries:
 ## Data
 The original datasets can be found on [Kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce) and their data schema is shown below:
 <p align="center">
-  <img src="files/olist_data_schema.png" alt="Olist Data Schema"/>
+  <img src="files/olist_er_diagram.svg" alt="Olist Data Schema"/>
