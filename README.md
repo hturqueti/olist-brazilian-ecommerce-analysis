@@ -20,7 +20,7 @@ The analysis was made using **Python 3.12.3** and the following libraries:
 - numpy         1.26.4
 - pandas        2.2.1
 - pendulum      3.0.0
-- plotly        5.20.0
+- plotly        5.24.1
 - safetensors   0.4.2
 - spacy         3.7.4
 
