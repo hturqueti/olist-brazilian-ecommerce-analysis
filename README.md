@@ -28,3 +28,19 @@ The analysis was made using **Python 3.12.3** and the following libraries:
 The original datasets can be found on [Kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce) and their data schema is shown below:
 <p align="center">
   <img src="files/olist_erd.svg" alt="Olist Data Schema"/>
+
+## Exploratory Data Analysis (EDA)
+All analyzes are in the file "01-orders-eda.ipynb".
+
+The topics covered were:
+- volume of purchases and payments by state and purchase status
+- average ticket per purchase in each region
+- what are the regions of origin and destination of the purchased goods
+- density map of registered sellers and customers
+- number of products purchased from the main categories over time
+- some customer metrics, such as:
+  - recency
+  - churn rate
+  - frequency
+  - total revenue
+- sentiment analysis of comments texts written by customers
